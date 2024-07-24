@@ -1,9 +1,9 @@
 @include("/site/include/header")
 
 @if(session('success'))
-<div class="success" id="fade">
-    {{session('success')}}
-</div>
+    <div class="success" id="fade">
+        {{session('success')}}
+    </div>
 @endif
 <div class="container-xxl bg-primary hero-header">
     <div class="container">
@@ -32,15 +32,15 @@
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script type="text/javascript">
-window.onload = function() {
-    Calendly.initBadgeWidget({
-        url: 'https://calendly.com/smart1qadir/30min',
-        text: 'Schedule time with me',
-        color: '#0069ff',
-        textColor: '#ffffff',
-        branding: undefined,
-    });
-}
+    window.onload = function () {
+        Calendly.initBadgeWidget({
+            url: 'https://calendly.com/smart1qadir/30min',
+            text: 'Schedule time with me',
+            color: '#0069ff',
+            textColor: '#ffffff',
+            branding: undefined,
+        });
+    }
 </script>
 <!-- Calendly badge widget end -->
 
@@ -449,7 +449,7 @@ window.onload = function() {
                                     name="name" placeholder="Your Name" value={{old("name")}}>
                                 <label for="name">Your Name</label>
                                 @error("name")
-                                <span class="invalid-feedback" role="alert">{{$message}}</span>
+                                    <span class="invalid-feedback" role="alert">{{$message}}</span>
                                 @enderror
                             </div>
                         </div>
@@ -459,7 +459,7 @@ window.onload = function() {
                                     name="email" placeholder="Your Email" value={{old("email")}}>
                                 <label for="email">Your Email</label>
                                 @error("email")
-                                <span class="invalid-feedback" role="alert">{{$message}}</span>
+                                    <span class="invalid-feedback" role="alert">{{$message}}</span>
                                 @enderror
                             </div>
                         </div>
@@ -469,7 +469,7 @@ window.onload = function() {
                                     id="subject" name="subject" placeholder="Subject" value={{old("subject")}}>
                                 <label for="subject">Subject</label>
                                 @error("subject")
-                                <span class="invalid-feedback" role="alert">{{$message}}</span>
+                                    <span class="invalid-feedback" role="alert">{{$message}}</span>
                                 @enderror
                             </div>
                         </div>
@@ -480,7 +480,7 @@ window.onload = function() {
                                     style="height: 150px">{{old("message")}}</textarea>
                                 <label for="message">Message</label>
                                 @error("message")
-                                <span class="invalid-feedback" role="alert">{{$message}}</span>
+                                    <span class="invalid-feedback" role="alert">{{$message}}</span>
                                 @enderror
                             </div>
                         </div>
